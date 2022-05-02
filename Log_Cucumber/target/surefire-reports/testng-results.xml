@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="80811" started-at="2022-05-02T07:02:31Z" finished-at="2022-05-02T07:03:51Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRuns.Run_All@7219ec67]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="80811" started-at="2022-05-02T07:02:31Z" finished-at="2022-05-02T07:03:51Z">
+      <class name="testRuns.Run_All">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRuns.Run_All@7219ec67]" name="setUpClass" is-config="true" duration-ms="1451" started-at="2022-05-02T07:02:31Z" finished-at="2022-05-02T07:02:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRuns.Run_All@7219ec67]" name="runScenario" duration-ms="42545" started-at="2022-05-02T07:02:32Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-02T07:03:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["page1_Feature1_scenatio1"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[page1_Feature1]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [My Store1] but found [My Store]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [My Store1] but found [My Store]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at commonMethods.SpecificToSelenium.windowTitle(SpecificToSelenium.java:10)
+at stepDefinations.Page1.user_is_on_page(Page1.java:12)
+at ✽.user is on "My Store1" page(file:///E:/workspace/Log_Cucumber/src/test/resources/features/page1/feature1.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRuns.Run_All@7219ec67]" name="runScenario" duration-ms="23795" started-at="2022-05-02T07:03:15Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-02T07:03:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["page1_Feature2_scenatio1"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[page1_Feature2]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRuns.Run_All@7219ec67]" name="tearDownClass" is-config="true" duration-ms="12975" started-at="2022-05-02T07:03:38Z" finished-at="2022-05-02T07:03:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRuns.Run_All -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

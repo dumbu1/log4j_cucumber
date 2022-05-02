@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 83.697 s <<< FAILURE! - in TestSuite
+testRuns.Run_All.runScenario["page1_Feature1_scenatio1", "Optional[page1_Feature1]"](1)  Time elapsed: 42.565 s  <<< FAILURE!
+java.lang.AssertionError: expected [My Store1] but found [My Store]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at commonMethods.SpecificToSelenium.windowTitle(SpecificToSelenium.java:10)
+	at stepDefinations.Page1.user_is_on_page(Page1.java:12)
+	at ✽.user is on "My Store1" page(file:///E:/workspace/Log_Cucumber/src/test/resources/features/page1/feature1.feature:4)
+
